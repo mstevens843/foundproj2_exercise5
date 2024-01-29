@@ -1,0 +1,38 @@
+const guests = ["ANTONY", "CIERO", "CASSIUS", "CLEOPATRA"]; 
+
+
+//step 1: Caesar remembers he forgot to add his best friend "BRUTUS" to the list. Add him to the beginning of the list.
+guests.unshift('BRUTUS');
+
+// Question 1: How can you verify that "BRUTUS" was added to the beginning of the array?
+// Question 1A You can check if Brutus was added to the beginning by inputting guests[0]
+
+// step 2: A herald announced the arrival of "AUGUSTUS" and "LUCIA". Add them to the end of the guest list.
+guests.push("AUGUSTUS", "LUCIA");
+
+
+// step 3: Caesar is curious. He wants to know if "SPARTACUS" has been invited. Check if he's on the list and find out at which position.
+const spartacusIndex = guests.indexOf("SPARTACUS");
+
+
+// Question 2: What would value of spartacusindex be if "SPARTACUS" wasn't invited? 
+// Question 2A: -1 
+
+
+// step 4
+const indextoRemove = guests.indexOf("CASSIUS");
+guests.slice(indextoRemove, 1);
+
+
+// step 5
+
+const specialGuests = guests.slice(0, 3);
+
+
+// step 6
+
+const honoredGuests = guests.slice(0,2);
+const extraGuests = guest.slice(2); 
+honoredGuests.sort();
+extraGuests.sort();
+const sortedGuest = honoredGuests.concat(extraGuests); 
